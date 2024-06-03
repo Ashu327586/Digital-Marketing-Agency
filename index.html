@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="landing">
+        <div class="description"> <!--- left child ---->
+            <h3 class="title">AWARD WINNING</h3>
+            <h1>DIGITAL MARKETING <br> AGENCY</h1>
+            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac
+                at purus,
+                Morbi sed lacus nec risus finibus feugiat et fermentum
+            </p>
+            <button id="openDialogBtn" type="button">Contact Us</button>
+            <dialog id="formDialog">
+                <!-- pop-up form -->
+                <form action="https://getform.io/f/jawxdpvb" method="POST" id="form">
+                    <h2>Talk to Us</h2>
+                    <div class="email">
+
+                        <input class="textBox" type="email" id="workEmail" name="email" placeholder=" ">
+                        <label class="formLabel" for="workEmail">Work email*</label>
+                        <span id="email-error" class="error-message"></span>
+                    </div>
+                    <div class="fullName">
+                        <div class="firstName">
+                            <input class="textBox" type="text" id="firstName" name="firstName" placeholder=" ">
+                            <label class="formLabel" for="firstName">First name*</label>
+                            <span id="firstName-error" class="error-message"></span>
+                        </div>
+                        <div class="lastName">
+                            <input class="textBox" type="text" id="lastName" name="lastName" placeholder="">
+                            <label id="lastName" class="formLabel" for="lastName">Last name*</label>
+                            <span id="lastName-error" class="error-message"></span>
+                        </div>
+
+                    </div>
+                    <div class="checkBox">
+                        <input type="checkbox" id="terms" name="terms">
+
+                        <label class="terms" for="terms"> I agree to Fyle's terms and conditions, and provide consent to
+                            send me
+                            communication.</label>
+                        <span id="terms-error" class="error-message"></span>
+                    </div>
+
+                    <button type="submit">Contact Us</button>
+                </form>
+                <button id="closeDialogBtn">Close</button>
+            </dialog>
+        </div>
+        <div class="pic"><!--- right child ---->
+            <img src="./assests/hero.png" alt="lady">
+        </div>
+    </div>
+    <div class="services">
+        <div class="dec1"><!-- first child of services div -->
+            <div class="left">
+                <h3 class="title">WHAT WE DO</h3>
+                <h1>SERVICES PROVIDED <br>FOR YOU</h1>
+
+            </div>
+            <div class="right">
+                <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit
+                    fringilla ac
+                    at purus,
+                    Morbi sed lacus nec risus finibus feugiat et fermentum
+                </p>
+            </div>
+        </div>
+        <div class="slider-container"><!-- second child of services div -->
+            <div class="slides">
+                <div id="card1" class="card">
+                    <img src="./assests/1.png" class="card-img" alt="service1">
+                    <div class="card-body">
+                        <img src="./icons/icon.png" alt="service1">
+                        <h3 class="card-info">WEB DEVELOPMENT</h3>
+                        <p class="card-info">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque
+                        </p>
+                        <button class="card-btn"><a target="_blank" href="https://www.fylehq.com/">Read more
+                                -></a></button>
+                    </div>
+                </div>
+                <div id="card2" class="card">
+                    <img src="./assests/2.png" class="card-img" alt="service1">
+                    <div class="card-body">
+                        <img src="./icons/icon.png" alt="service1">
+                        <h3 class="card-info">APP DEVELOPMENT</h3>
+                        <p class="card-info">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque
+                        </p>
+                        <button class="card-btn"><a target="_blank" href="https://www.fylehq.com/">Read more
+                                -></a></button>
+                    </div>
+                </div>
+                <div id="card3" class="card">
+                    <img src="./assests/3.png" class="card-img" alt="service1">
+                    <div class="card-body">
+                        <img src="./icons/icon.png" alt="service1">
+                        <h3 class="card-info">FINANCE MANAGEMENT</h3>
+                        <p class="card-info">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque
+                        </p>
+                        <button class="card-btn"><a target="_blank" href="https://www.fylehq.com/">Read more
+                                -></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="dot-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="benifits">
+        <h3 class="title">WHY CHOOSE US?</h3>
+        <h1>WHY WE ARE BEST</h1>
+        <div class="pics3 ">
+            <div class="benifit-container">
+                <img class="icon" src="./icons/1@2x.png/">
+                <h4>Clarified Vision & Target</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+            </div>
+            <div class="benifit-container">
+                <img class="icon" src="./icons/2@2x.png" alt="clock">
+                <h4>High Performance</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+            </div>
+            <div class="benifit-container">
+                <img class="icon" src="./icons/3@2x.png" alt="path">
+                <h4>Maintain Security</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+            </div>
+            <div class="benifit-container">
+                <img class="icon" src="./icons/4@2x.png" alt="trophy">
+                <h4>Better Strategy & Quality</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+            </div>
+        </div>
+        <h3 class="title">OUR PROJECTS</h3>
+        <h1>WHY WE ARE BEST</h1>
+        <div class="project-container">
+            <div id="left-child">
+            </div>
+            <div id="right-child">
+
+                <button id="b1" onclick="display(1)" class="buttons">
+                    <h3>Genderless Kei – Japan’s Hot</h3>
+                    <p>Set to launch on the manufacturer’s new A330 neo aircraft in 2017.</p>
+                </button>
+
+
+                <button id="b2" onclick="display(2)" class="buttons">
+                    <h3>Better Strategy & Quality</h3>
+                    <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017.</p>
+                </button>
+                <button id="b3" onclick="display(3)" class="buttons">
+                    <h3>Genderless Kei – Japan’s Hot</h3>
+                    <p>Set to launch on the manufacturer’s new A330 neo aircraft in 2017.</p>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="acheivments">
+        <div class="dec2">
+            <h3 class="title">EXPERT'S GROWTH</h3>
+            <h1>OUR COMPANY'S GROWTH</h1>
+        </div>
+        <div id="acheivments" class="pics3">
+            <div class="box">
+                <img class="icons" src="./icons/heart (2).png" alt="heart">
+                <h2>199+</h2>
+                <p>Satisfied Customers</p>
+            </div>
+            <div class="box">
+                <img class="icons" src="./icons/clock (3).png" alt="clock">
+                <h2>1591+</h2>
+                <p>Days Of Operation</p>
+            </div>
+            <div class="box">
+                <img class="icons" src="./icons/Path 4402.png" alt="path">
+                <h2>283+</h2>
+                <p>Complete Project</p>
+            </div>
+            <div class="box">
+                <img class="icons" src="./icons/Path 4406.png" alt="trophy">
+                <h2>75+</h2>
+                <p>Win Awards</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="client-feedback">
+            <h3 class="title">CLIENT's FEEDBACK</h3>
+            <h1>WHAT PEOPLE SAY ABOUT US</h1>
+            <p style="text-align: justify;">
+                Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is<br> reproduced below for those
+                interested. Sections
+                Bonorum et Malorum original.
+            </p>
+            <p style="text-align: left; color: gray;">
+                <span style="color: #FF3147;"><b>JANNAT TUMPA</b></span> - COO, AMERIMAR ENTERPRISES, INC.
+            </p>
+
+        </div>
+        <div class="clients">
+            <img src="./icons/Group 500.png" alt="clients">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

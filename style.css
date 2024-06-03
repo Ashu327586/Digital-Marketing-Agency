@@ -1,0 +1,627 @@
+/* contact-form styles */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Cormorant SC", serif;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+dialog {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.fullName {
+    display: flex;
+    justify-content: flex-start;
+}
+
+form {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+    width: 400px;
+}
+
+.email,
+.firstName,
+.lastName {
+    position: relative;
+}
+
+.email {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.formLabel {
+    position: absolute;
+    top: 0.6rem;
+    left: 1.4rem;
+    transition: top 200ms ease-in, left 200ms ease-in;
+}
+
+
+
+.textBox:focus~.formLabel,
+.textBox:not(:placeholder-shown).textBox:not(:focus)~.formLabel {
+    top: -0.3rem;
+    left: 0.5rem;
+    font-size: 10px;
+}
+
+.checkBox {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+form div {
+    margin: 10px;
+    padding: 10px;
+}
+
+.terms {
+    text-align: justify;
+}
+
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 5px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #66afe9;
+}
+
+button[type="submit"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(2px);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+}
+
+/*  -x-  */
+
+/* styles for landing page */
+
+.pic img {
+    height: 567px;
+}
+
+.landing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    width: 251px;
+    height: 30px;
+    letter-spacing: 0px;
+    color: #FF3147;
+    opacity: 1;
+    font-size: 20px;
+}
+
+.description {
+    text-align: justify;
+    width: 400px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.description button {
+    background-color: #FF3147;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 20px;
+    border: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.description button:active {
+    transform: scaleX(0.95);
+    box-shadow: 0 5px #666;
+}
+
+.description button:hover {
+    background-color: black;
+}
+
+/*  -x-  */
+/* styles for services */
+
+.services {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: justify;
+    justify-content: end;
+    margin: 0px 40px;
+}
+
+.dec1 {
+    display: flex;
+}
+
+/* for slider container */
+
+.slider-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card {
+    display: none;
+    transition: opacity 0.5s ease;
+    width: 300px;
+    height: 400px;
+    border: 4px solid white;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card.active {
+    display: block;
+    opacity: 1;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #FF3147;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: 1s;
+}
+
+.card:hover .card-body {
+    right: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-body img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+}
+
+.card-btn,
+.card-btn a {
+    padding: 10px 20px;
+    color: #FF3147;
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.card-info {
+    color: white;
+}
+
+.dot-container {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.dot {
+    display: inline-block;
+    margin: 0 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+    background-color: #888;
+}
+
+.dot.active {
+    background-color: red;
+}
+
+/*  -x-  */
+/* acheivements section */
+.acheivments {
+    background-color: #FAFAFA;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+    height: 400px;
+}
+
+.dec2 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.dec2 h3,
+.client-feedback h3 {
+    margin: 20px auto;
+}
+
+.pics3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+}
+
+.box {
+    background-color: white;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+    box-shadow: 0 10px 20px rgba(233, 0, 0, 0.5);
+}
+
+/*  -x-  */
+/* benifits section */
+.benifits p {
+    text-align: left;
+}
+
+
+.benifit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    margin: 0 20px;
+}
+
+.benifits {
+    text-align: center;
+}
+
+.benifits h3 {
+    margin: 20px auto;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.project-container {
+    display: flex;
+    margin: 0 20%;
+    flex-direction: row;
+    width: 600px;
+    align-items: stretch;
+}
+
+#left-child {
+    margin: 0 20px;
+}
+
+#left-child img {
+    width: 500px;
+    height: 500px;
+}
+
+#right-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    width: 200px;
+    height: 160px;
+    margin-bottom: 9px;
+}
+
+#image-container {
+    width: 20px;
+}
+
+/*  -x-  */
+/* client feedback section */
+.client-feedback {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    padding: 20px;
+}
+
+.clients {
+    background-image: url(./icons/NoPath\ -\ Copy.png);
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.clients img {
+    width: 600px;
+    margin-top: 60px;
+    opacity: 1;
+}
+
+/*  -x-  */
+/* Media queries for responsive design */
+
+/* Adjustments for devices with a max-width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    .landing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .description,
+    .pic {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .description h1,
+    .description h3,
+    .services h1,
+    .services h3 {
+        font-size: 1.5rem;
+    }
+
+    .description p {
+        font-size: 1rem;
+    }
+
+    .services {
+        margin-top: 2rem;
+    }
+
+    .form {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    #left-child img {
+        width: 100%;
+        height: auto;
+    }
+
+    .clients img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .buttons {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+/* Adjustments for devices with a max-width of 480px (mobile phones) */
+@media (max-width: 480px) {
+
+    .description,
+    .pics3,
+    .acheivments {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        text-align: center;
+    }
+
+    #acheivments {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .dec2 h1,
+    .dec2 h3 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .description h1,
+    .description h3,
+    .services h1,
+    .services h3 {
+        font-size: 1.2rem;
+    }
+
+    .description p {
+        font-size: 0.9rem;
+    }
+
+    .form {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .form div {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .pic img {
+        height: auto;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .benifits h3,
+    .acheivments h3,
+    .client-feedback h3 {
+        font-size: 1rem;
+    }
+
+    .project-container {
+        margin: 0;
+        width: 100%;
+    }
+
+    #left-child img {
+        width: 100%;
+        height: auto;
+    }
+
+    .clients {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clients img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .buttons {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}

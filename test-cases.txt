@@ -1,0 +1,61 @@
+Test Cases for the Digital Marketing Agency Landing Page
+
+General Functionality
+
+Test Case 1: Launch and Load
+
+     Description: Verify the landing page loads correctly without errors.
+     Steps:
+        1. Open a web browser.
+        2. Navigate to the URL of the landing page.
+        3. Expected Result: The landing page should display all content correctly, including text, images, and buttons.
+ 
+ Test Case 2: Contact Us Button
+
+     Description: Verify the "Contact Us" button functionality.
+     Steps:
+        1. Open the landing page.
+        2. Click the "Contact Us" button.
+        3. Expected Result: A contact form dialog should appear.
+
+ Test Case 3: Contact Form Submission 
+
+     Description: Verify the form submission process.
+     Steps:
+        1. Open the landing page and open the contact form.
+        2. Fill out all required fields (email, first name, last name, and agree to terms checkbox).
+        3. Click the "Contact Us" button within the form.
+        4. Expected Result: 
+             A success message or confirmation should be displayed upon submission.
+             Validate form field errors are displayed for missing required fields or invalid email format.
+             Form details should be submitted to getform.io and confirmation message should be displayed.
+
+Test Case 4: Read more redirect
+
+     Description: upon clicking read more section , user should be redirected to fyle.com
+     Steps:
+        1. Open the landing page and scroll down to services section.
+        2. Here the images corresponding to services will be sliding from left to right
+        3. Hover (put the cursor over the image) and click on the READ MORE->  button
+        4. Expected Result: 
+             user should be redirected to fyle.com
+
+Responsiveness:
+
+ Test Case 5: Desktop View
+     Description: Verify the layout and functionality on a desktop browser window.
+     Steps:
+        1. Open the landing page on a desktop browser window.
+        2. Resize the browser window to a large size (e.g., 1440px wide).
+        3. Expected Result: 
+             The content should be displayed in a two-column layout with the description on the left and the image on the right.
+             All elements should be positioned and sized correctly.
+ 
+ Test Case 6: Mobile View
+     Description: Verify the layout and functionality on a mobile device or very small browser window.
+     Steps:
+        1. Open the landing page on a mobile device or resize the browser window to a small size (e.g., 320px wide).
+        2. Expected Result: 
+             The content should be displayed in a single column with elements stacked vertically.
+             Text size and button sizes should be adjusted for readability on a touch screen.
+
